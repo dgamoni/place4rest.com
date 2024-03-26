@@ -1,0 +1,533 @@
+/*dgamoni*/
+#wrapper-footer {
+  background-color: #313639;
+  color: rgba(255, 255, 255, 0.5);
+}
+/*#map-filters-51 .filter-checkbox {
+  display: flex;
+}
+#map-filters-51 .filter-checkbox label {
+    display: none;
+    margin: 0;
+}*/
+.LA_filters .filter-checkbox {
+  display: flex;
+}
+.LA_filters .filter-checkbox label {
+    display: none;
+    margin: 0;
+}
+/*#map-filters-51 .LA_filters_checkbox {
+
+}*/
+.filter_term_image {
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+}
+.filter_term_image:hover {
+  cursor: pointer;
+}
+.filter_term_checkbox:hover {
+  cursor: pointer;
+}
+.filters_image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    text-align: center;
+}
+.filters_image:hover {
+  cursor: pointer;
+}
+.LA_filters_checkbox  {
+  padding: 10px;
+}
+.filters_image input[type=checkbox] {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    opacity: 0;
+}
+.LA_filters ul {
+    margin-bottom: 0;
+        padding: 0;
+}
+.filters_image input[type=checkbox] + .slug-wildnights.filter_term_image {
+    background-position: 0px -80px;
+}
+.filters_image input[type=checkbox]:checked + .slug-wildnights.filter_term_image {
+    background-position: 0px 0px;
+}
+.filters_image input[type=checkbox] + .slug-springs.filter_term_image {
+    background-position: -83px -80px;
+}
+.filters_image input[type=checkbox]:checked + .slug-springs.filter_term_image {
+    background-position: -83px 0px;
+}
+.filters_image input[type=checkbox] + .slug-castles.filter_term_image {
+    background-position: -165px -80px;
+}
+.filters_image input[type=checkbox]:checked + .slug-castles.filter_term_image {
+    background-position: -165px 0px;
+}
+.filter_term_name {
+  /*font-family: Helvetica Neue;*/
+  line-height: 15px;
+  color: #313639;
+  font-weight: 600;
+      text-transform: uppercase;
+    font-size: 13px;
+}
+.navbar-nav .nav-link {
+    /*font-family: Helvetica Neue;*/
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.tooltip_more {
+
+}
+.tooltip_wrap {
+
+}
+/*#map-container-51 .leaflet-popup-content {
+  width: 450px !important;
+}*/
+.leaflet-container .leaflet-popup-content {
+  width: 450px !important;
+}
+.leaflet-container a.tooltip_more {
+  color: #ffffff;
+  float: right;
+    text-transform: uppercase;
+    font: 400 11px Roboto, Arial, sans-serif;
+        margin-bottom: 4px;
+    margin-right: 4px;
+}
+/*#map-container-51.leaflet-container {
+    font: 400 11px Roboto, Arial, sans-serif;
+}*/
+#map-container-24.leaflet-container {
+    font: 400 11px Roboto, Arial, sans-serif;
+}
+.free4rest_rate_comment_wrap {
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+.decomments-add-blockquote {
+  display: none;
+}
+.bx-wrapper, .bx-viewport {
+    height: 300px !important; 
+}
+/*.bx-wrapper img {
+  height: 300px;
+  max-width: auto;
+  display: inline;
+}*/
+.fit-image{
+  width: 100%;
+  object-fit: cover;
+  height: 300px; /* only if you want fixed height */
+}
+.entry-header {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+div.field_type-star_rating {clear:both;}
+div.field_type-star_rating ul.star-rating {list-style:none;padding:0;font-size:16px;cursor:pointer;}
+div.field_type-star_rating ul.star-rating li {line-height:1.6em;float:left;padding-right:5px;}
+div.field_type-star_rating ul.star-rating li i {cursor:pointer;}
+div.field_type-star_rating a.clear-button {}
+
+.place_meta {
+  display: flex;
+flex-direction: column;
+}
+.star-rating .fa-star::before {
+    font-size: 23px;
+    color: #27529C;
+}
+.star-rating .fa-star-o::before {
+    font-size: 23px;
+    color: #27529C;
+}
+.star-rating .fa-star-half-empty::before,
+.star-rating .fa-star-half-full::before,
+.star-rating .fa-star-half-o::before {
+    font-size: 23px;
+    color: #27529C;
+}
+.slider_wrap .bx-wrapper .bx-controls-direction a {
+  z-index: 99;
+}
+.tooltip_wrap  .rate_wrap {
+  font-size: 17px;
+    display: flex;
+}
+.comment_link {
+    font-size: 17px;
+    color: #27529C;
+}
+.img_count {
+  position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 22px;
+        top: 7px;
+    background-color: #27529C;
+    color: #F0DAA6;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    line-height: 24px;
+    font-size: 12px;
+    text-align: center;
+}
+.entry-content {
+      margin-top: 20px;
+}
+.tags_list {
+  display: flex;
+  margin-top: 10px;
+}
+.tags_element {
+  width: 30px;
+  height: 30px;
+  background-image: url(../../img/icon_services_small.png);
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+/*cat_services*/
+.cat_services .tags_element.pool {
+  background-position: 0 -80px;
+}
+.cat_services .tags_element.lpg {
+  background-position: -133px -40px;
+}
+.cat_services .tags_element.internet_3g {
+  background-position: -133px 0;
+}
+.cat_services .tags_element.wifi {
+  background-position: -177px -80px;
+}
+.cat_services .tags_element.showers {
+  background-position: -177px 0;
+}
+.cat_services .tags_element.dog {
+  background-position: 0 0;
+}
+.cat_services .tags_element.washing_motorhomes {
+  background-position: -177px -40px;
+}
+.cat_services .tags_element.trash_can {
+  background-position: -89px -80px;
+}
+.cat_services .tags_element.toilets {
+  background-position: -133px -80px;
+}
+.cat_services .tags_element.water {
+  background-position: -44px -80px;
+}
+.cat_services .tags_element.laundromat {
+  background-position: -221px -40px;
+}
+.cat_services .tags_element.black_water {
+  background-position: -221px 0;
+}
+.cat_services .tags_element.used_water {
+  background-position: 0 -40px;
+}
+.cat_services .tags_element.bakery {
+  background-position: -44px 0;
+}
+.cat_services .tags_element.electricity {
+  background-position: -44px -40px;
+}
+
+
+/*cat_activity*/
+.cat_activity .tags_element.viewpoint {
+  background-position: 0 -161px;
+}
+.cat_activity .tags_element.monuments {
+  background-position: -89px -161px;
+}
+.cat_activity .tags_element.trekking {
+  background-position: -44px -161px;
+}
+.cat_activity .tags_element.windsurf {
+  background-position: -177px -161px;
+}
+.cat_activity .tags_element.bike {
+  background-position: -133px -161px;
+}
+.cat_activity .tags_element.kayak {
+  background-position: 0 -120px;
+}
+.cat_activity .tags_element.playground {
+  background-position: -89px -120px;
+}
+.cat_activity .tags_element.fishing {
+  background-position: -177px -120px;
+}
+.cat_activity .tags_element.moto {
+  background-position: -133px -120px;
+}
+.cat_activity .tags_element.beach {
+  background-position: -221px -161px;
+}
+.cat_activity .tags_element.climbing {
+  background-position: -44px -120px;
+}
+
+.tooltip_tags {
+      display: flex;
+}
+.tooltip_excerpt {
+      padding-top: 5px;
+}
+.tooltip_wrap .tags_list {
+    margin-top: 7px;
+}
+.tooltip_image {
+ /* padding-top: 9px;*/
+}
+
+.logged-in .acf_form_wrap {
+  margin-top: 100px;
+}
+.acf_form_wrap .acf-field--post-title {
+  position: absolute;
+  top: -94px;
+  width: 100%;
+}
+.acf_form_wrap .acf-field input[type="text"] {
+  border: 1px solid #27529c;
+      height: 30px;
+    padding: 0 5px !important;
+    font-size: 14px;
+}
+.acf_form_wrap .acf-form-submit input {
+text-shadow: none !important;
+    -moz-text-shadow: none !important;
+    -webkit-text-shadow: none !important;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 40px;
+    font-size: 17px;
+    padding: 0 30px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background: #27529c !important;
+    border: none;
+    text-transform: uppercase;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    color: #fff !important;
+    cursor: pointer;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    font-weight: bold;
+}
+.acf_form_wrap .append-markers,
+.acf_form_wrap .get-markers {
+    text-shadow: none !important;
+    -moz-text-shadow: none !important;
+    -webkit-text-shadow: none !important;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 20px;
+    min-width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 15px;
+    background: #27529c !important;
+    height: 26px;
+    padding: 0 15px;
+    border: none;
+    margin-right: 10px;
+    text-transform: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 12px;
+    color: #fff !important;
+    cursor: pointer;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    font-weight: bold;
+    text-transform: uppercase;  
+}
+.acf-form-submit {
+      text-align: center;
+    margin-bottom: 50px;
+}
+.page-template-template-add-place .entry-header {
+   /* margin-top: 20px;*/
+   display: flex;
+}
+.acf_form_wrap .acf-field .acf-notice.-error {
+/*    background: #ffe6e6;
+    color: #d12626;
+    position: absolute;
+    z-index: 1;
+    background: none;
+    margin: 0;
+    padding: 0;
+        padding-left: 0px;
+    padding-left: 10px;*/
+}
+.category-filters-container {
+  display: flex;
+  /*    justify-content: space-around;*/
+      justify-content: space-between;
+}
+.filters_image input[type=checkbox] + .slug-motorhome.filter_term_image {
+    background-position: -337px -80px;
+}
+.filters_image input[type=checkbox]:checked + .slug-motorhome.filter_term_image {
+    background-position: -337px 0;
+}
+
+.filters_image input[type=checkbox] + .slug-hiking.filter_term_image {
+    background-position: -417px -80px;
+}
+.filters_image input[type=checkbox]:checked + .slug-hiking.filter_term_image {
+    background-position: -417px 0;
+}
+
+.filters_image input[type=checkbox] + .slug-cars.filter_term_image {
+    background-position: -258px -80px;
+}
+.filters_image input[type=checkbox]:checked + .slug-cars.filter_term_image {
+    background-position: -258px 0px;
+}
+h1.entry-title {
+  text-transform: uppercase;
+    font-size: 20px;
+}
+h3.widget-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.tags_element_full {
+    width: 42px;
+    height: 42px;
+    background-image: url(../../img/icon_services_small_full.png);
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+.cat_place .tags_element_full.wildnights {
+    background-position: 0px 0px;
+}
+.cat_place .tags_element_full.castles {
+    background-position: -97px 0px;
+}
+.cat_place .tags_element_full.springs {
+    background-position: -48px 0px;
+}
+.cat_place .tags_element_full.motorhome {
+    background-position: -196px 0px;
+}
+.cat_place .tags_element_full.cars {
+    background-position: -150px 0px;
+}
+.cat_place .tags_element_full.hiking {
+    background-position: -241px 0px;
+}
+
+.lwa .lwa-register {
+  margin-top: 0;
+  display: block;
+}
+
+.cutom_input {
+  display: flex;
+}
+/*.lwa-password input, .lwa-username input, .lwa-email input, .lwa-remember-email input*/
+.customlog_wrap .decomments-enter-row .lwa-username input,
+.customlog_wrap .decomments-enter-row .lwa-email input,
+.customlog_wrap .decomments-enter-row .lwa-password input {
+  width: 50%;
+  max-width: 50%;
+  border-color: #27529c !important;
+}
+.customlog_wrap .decomments-enter-row label {
+  width: 85px;
+}
+.decomments-enter-row input#lwa_wp-submit,
+.decomments-enter-row input#wp-submit {
+  background: #27529c !important;
+  color: #fff !important;
+  cursor: pointer;
+  height: 40px;
+font-size: 17px;
+}
+.decomments-enter-row input.lwa-rememberme {
+  width: inherit;
+}
+.lwa-submit-links {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: calc(100% - 60px);
+  max-width: calc(100% - 60px);
+}
+.navbar-dark .navbar-nav .nav-link {
+    font-weight: 600;
+}
+.front_log_out {
+  min-width: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 15px;
+      margin-right: 15px;
+  margin-right: 15px;
+  background: #27529c !important;
+  height: 26px;
+  padding: 0 15px;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 26px;
+}
+.page-template-template-add-place .updated {
+  display: none;
+}
