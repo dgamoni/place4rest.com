@@ -13,7 +13,7 @@
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		<?php if ( is_user_logged_in() ) { ?>
-			<!-- <a class="front_log_out" id="wp-logout" href="<?php echo wp_logout_url_custom() ?>"><?php esc_html_e( 'Log Out' ,'login-with-ajax') ?></a> -->
+			<a class="front_log_out" id="wp-logout" href="<?php echo wp_logout_url( home_url() ); ?>"><?php esc_html_e( 'Log Out' ,'login-with-ajax') ?></a> 
 		<?php } ?>
 	</header><!-- .entry-header -->
 

@@ -1,13 +1,13 @@
 <?php
-if ( ! function_exists( 'bgt_cat_services' ) ) {
+if ( ! function_exists( 'bgt_cat_parking_tax' ) ) {
 
 // Register Custom Taxonomy
-function bgt_cat_services() {
+function bgt_cat_parking_tax() {
 
 	$labels = array(
-		'name'                       => _x( 'Services', 'Services', 'free4rest' ),
-		'singular_name'              => _x( 'Services', 'Services', 'free4rest' ),
-		'menu_name'                  => __( 'Services', 'free4rest' ),
+		'name'                       => _x( 'Categories', 'Categories', 'free4rest' ),
+		'singular_name'              => _x( 'Categories', 'Categories', 'free4rest' ),
+		'menu_name'                  => __( 'Categories', 'free4rest' ),
 		'all_items'                  => __( 'All Items', 'free4rest' ),
 		'parent_item'                => __( 'Parent Item', 'free4rest' ),
 		'parent_item_colon'          => __( 'Parent Item:', 'free4rest' ),
@@ -35,9 +35,9 @@ function bgt_cat_services() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
 	);
-	register_taxonomy( 'cat_services', array( 'place', 'parking' ), $args );
+	register_taxonomy( 'cat_parking', array( 'parking' ), $args );
 
 }
-add_action( 'init', 'bgt_cat_services', 0 );
+add_action( 'init', 'bgt_cat_parking_tax', 0 );
 
 }

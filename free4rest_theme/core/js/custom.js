@@ -42,8 +42,8 @@ jQuery(document).ready(function($) {
 	  });
 
 	  // 
-	  $('div.LA_filters_checkbox.filters_image .slug-springs').parent().hide();
-	  $('div.LA_filters_checkbox.filters_image .slug-castles').parent().hide();
-	  $('div.LA_filters_checkbox.filters_image .slug-hiking').parent().hide();
+	  // $('div.LA_filters_checkbox.filters_image .slug-springs').parent().hide();
+	  // $('div.LA_filters_checkbox.filters_image .slug-castles').parent().hide();
+	  // $('div.LA_filters_checkbox.filters_image .slug-hiking').parent().hide();
 
 });

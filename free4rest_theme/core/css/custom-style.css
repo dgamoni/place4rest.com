@@ -54,6 +54,57 @@
     margin-bottom: 0;
         padding: 0;
 }
+/*cpt parking*/
+.filters_image input[type=checkbox] + .slug-azs.filter_term_image {
+    background-position: -420px -79px;
+}
+.filters_image input[type=checkbox]:checked + .slug-azs.filter_term_image {
+    background-position: -420px 0px;
+}
+
+.filters_image input[type=checkbox] + .slug-sto.filter_term_image {
+    background-position: -499px -80px;
+}
+.filters_image input[type=checkbox]:checked + .slug-sto.filter_term_image {
+    background-position: -499px 0px;
+}
+
+.filters_image input[type=checkbox] + .slug-lpg.filter_term_image {
+    background-position: -340px -80px;
+}
+.filters_image input[type=checkbox]:checked + .slug-lpg.filter_term_image {
+   background-position: -340.1px 0.1px;
+}
+
+.filters_image input[type=checkbox] + .slug-cafe.filter_term_image {
+    background-position: -166px -79px;
+}
+.filters_image input[type=checkbox]:checked + .slug-cafe.filter_term_image {
+    background-position: -166px 0.5px;
+}
+
+.filters_image input[type=checkbox] + .slug-motels.filter_term_image {
+    background-position: -83px -79px;
+}
+.filters_image input[type=checkbox]:checked + .slug-motels.filter_term_image {
+    background-position: -83px 0.9px;
+}
+
+
+.filters_image input[type=checkbox] + .slug-supermarkets.filter_term_image {
+    background-position: 0px -79px;
+}
+.filters_image input[type=checkbox]:checked + .slug-supermarkets.filter_term_image {
+    background-position: 0px 0.9px;
+}
+
+.filters_image input[type=checkbox] + .slug-tir.filter_term_image {
+    background-position: -250px -79px;
+}
+.filters_image input[type=checkbox]:checked + .slug-tir.filter_term_image {
+    background-position: -250px 0.5px;
+}
+/*cpt place*/
 .filters_image input[type=checkbox] + .slug-nightparking.filter_term_image {
     background-position: 0px 0px;
 }
@@ -129,10 +180,10 @@
 .bx-wrapper, .bx-viewport {
     height: 300px !important; 
 }
-.page-template-template-rent .bx-wrapper, .bx-viewport {
+/*.page-template-template-rent .bx-wrapper, .bx-viewport {
     height: 720px !important; 
         border: none;
-}
+}*/
 /*.bx-wrapper img {
   height: 300px;
   max-width: auto;
@@ -320,6 +371,10 @@ flex-direction: column;
 }
 .tooltip_image {
  /* padding-top: 9px;*/
+ background-image: url(../../img/pre_image.png);
+ background-repeat: no-repeat;
+    width: 149px;
+    height: 149px
 }
 
 .logged-in .acf_form_wrap {
@@ -722,4 +777,16 @@ font-size: 17px;
 }
 .des-4 {
   
+}
+
+.front_log_out:hover {
+  color:white;
+}
+#la-filter-40,
+#la-filter-39,
+#la-filter-50,
+#la-filter-5,
+#la-filter-6,
+#la-filter-9 {
+  display: none;
 }
