@@ -7,7 +7,7 @@
 ?>
 <div class="row customlog_wrap">
 
-    	<div class="lwa lwa-default col-6"><?php //class must be here, and if this is a template, class name should be that of template directory ?>
+    	<div class="lwa lwa-default col-md-6"><?php //class must be here, and if this is a template, class name should be that of template directory ?>
             <h4><?php esc_html_e('Log in','login-with-ajax') ?></h4>
             <form class="lwa-form decomments-enter-row" action="<?php echo esc_attr(LoginWithAjax::$url_login); ?>" method="post">
             	<div>
@@ -57,36 +57,33 @@
                 </div>
             </form>
             <?php if( !empty($lwa_data['remember']) && $lwa_data['remember'] == 1 ): ?>
-            <form class="lwa-remember" action="<?php echo esc_attr(LoginWithAjax::$url_remember) ?>" method="post" style="display:none;">
+            <form class="lwa-remember decomments-enter-row" action="<?php echo esc_attr(LoginWithAjax::$url_remember) ?>" method="post" style="display:none;">
             	<div>
             	<span class="lwa-status"></span>
-                <table>
-                    <tr>
-                        <td>
-                            <strong><?php esc_html_e("Forgotten Password", 'login-with-ajax'); ?></strong>         
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="lwa-remember-email">  
+
+                    <strong><?php esc_html_e("Forgotten Password", 'login-with-ajax'); ?></strong>         
+
+                    <div>
+                        <p class="lwa-remember-email">  
                             <?php $msg = __("Enter username or email", 'login-with-ajax'); ?>
                             <input type="text" name="user_login" class="lwa-user-remember" value="<?php echo esc_attr($msg); ?>" onfocus="if(this.value == '<?php echo esc_attr($msg); ?>'){this.value = '';}" onblur="if(this.value == ''){this.value = '<?php echo esc_attr($msg); ?>'}" />
                             <?php do_action('lostpassword_form'); ?>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="lwa-remember-buttons">
+                        </p>
+                    </div>
+                    <div>
+                        <p class="lwa-remember-buttons">
                             <input type="submit" value="<?php esc_attr_e("Get New Password", 'login-with-ajax'); ?>" class="lwa-button-remember" />
-                            <a href="#" class="lwa-links-remember-cancel"><?php esc_html_e("Cancel", 'login-with-ajax'); ?></a>
+                            <!-- <a href="#" class="lwa-links-remember-cancel"><?php esc_html_e("Cancel", 'login-with-ajax'); ?></a> -->
                             <input type="hidden" name="login-with-ajax" value="remember" />
-                        </td>
-                    </tr>
-                </table>
+                        </p>
+                    </div>
+
                 </div>
             </form>
             <?php endif; ?>
         </div>
 
-        <div class="lwa lwa-default col-6">    
+        <div class="lwa lwa-default col-md-6">    
     		<?php if( get_option('users_can_register') && !empty($lwa_data['registration']) && $lwa_data['registration'] == 1 ): ?>
         		<div class="lwa-register lwa-register-default _lwa-modal">
         			

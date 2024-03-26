@@ -38,7 +38,7 @@ function tsm_do_pre_save_post( $post_id ) {
 }
 
 //save place
-add_action( 'acf/save_post', 'tsm_save_image_field_to_featured_image', 10 );
+//add_action( 'acf/save_post', 'tsm_save_image_field_to_featured_image', 10 );
 function tsm_save_image_field_to_featured_image( $post_id ) {
 
 	// Bail if not logged in or not able to post

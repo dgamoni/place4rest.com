@@ -531,3 +531,16 @@ font-size: 17px;
 .page-template-template-add-place .updated {
   display: none;
 }
+.page-template-template-add-place .wrapper-map {
+  min-height: 500px;
+}
+.decomments-enter-row input.lwa-button-remember {
+    background: #27529c !important;
+    color: #fff !important;
+    cursor: pointer;
+    height: 40px;
+    font-size: 17px;
+}
+.lwa-user-remember {
+  border-color: #27529c !important;
+}
