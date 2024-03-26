@@ -21,6 +21,10 @@ function custom_child_scripts() {
 		CORE_URL . '/css/custom-style.css'
 	);
 
+	wp_enqueue_style(
+		'custom-style-mobile', 
+		CORE_URL . '/css/custom-style-mobile.css'
+	);
 	wp_enqueue_script(
 	    'jquery-bxslider',
 	    CORE_URL . '/js/jquery.bxslider.js'

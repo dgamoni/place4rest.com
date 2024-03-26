@@ -13,6 +13,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper-map" id="full-width-page-wrapper">
 
+	<div class="full_header">
+		<header class="container">
+			<h1 class="entry-title"><?php echo get_the_title( get_the_ID() ); ?></h1>
+		</header>
+	</div>
+
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
 
 		<div class="row">

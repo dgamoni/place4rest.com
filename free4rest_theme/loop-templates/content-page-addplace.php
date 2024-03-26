@@ -24,14 +24,20 @@
 			<?php
 				// Bail if not logged in or able to post
 				if ( ! ( is_user_logged_in()|| current_user_can('publish_posts') ) ) {
-					echo '<p>'. __('Для добавления нового места вам нужно зарегистрироваться.', 'free4rest'). '</p>';
+					//echo '<p>'. __('Для добавления нового места вам нужно зарегистрироваться.', 'free4rest'). '</p>';
+					echo '<p>'. __('To add a new place you need to register.', 'free4rest'). '</p>';
 					echo do_shortcode('[login-with-ajax]');
 					return;
 				} else { 
-
+					//var_dump(ICL_LANGUAGE_CODE);
+					if(ICL_LANGUAGE_CODE == 'en') {
+						$field_groups = 92;
+					}else {
+						$field_groups = 38;
+					}
 				     acf_form(array(
 				         'post_id' => 'new_post',
-				         'field_groups' => array(38), // Used ID of the field groups here. array(188,167) 268
+				         'field_groups' => array($field_groups), // Used ID of the field groups here. array(188,167) 268
 				         'post_title' => true, // This will show the title filed
 				         'post_content' => false, // This will show the content field
 				         'form' => true,
@@ -40,7 +46,8 @@
 				             'post_status' => 'draft' // You may use other post statuses like draft, private etc.
 				         ),
 				         //'return' => home_url('thank-you'),
-				         'submit_value' => __('Add Place', 'free4rest'),
+				         // 'submit_value' => __('Добавить новое место', 'free4rest'),
+				          'submit_value' => __('Add place', 'free4rest'),
 				         'uploader' => 'wp', //'basic'
 				         //'label_placement' => 'left',
 				         'html_before_fields' => '

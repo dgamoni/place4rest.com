@@ -7,8 +7,8 @@
 //add_filter('acf/pre_save_post' , 'tsm_do_pre_save_post' );
 function tsm_do_pre_save_post( $post_id ) {
 	$map = get_post_meta($post_id, 'free4rest_front_map', true);
-	var_dump($map);
-	var_dump( $_POST); die();
+	// var_dump($map);
+	// var_dump( $_POST); die();
 	// // Bail if not logged in or not able to post
 	// if ( ! ( is_user_logged_in() || current_user_can('publish_posts') ) ) {
 	// 	return;
@@ -75,7 +75,7 @@ function tsm_save_image_field_to_featured_image( $post_id ) {
 
 // Change Title Lable
 function change_title_label( $field ) {
-    $field['label'] = __( 'Название места', 'free4rest' );
+    $field['label'] = __( 'Place name', 'free4rest' );
     return $field;
 }
 add_filter('acf/load_field/name=_post_title', 'change_title_label');

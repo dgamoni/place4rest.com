@@ -23,7 +23,13 @@
 
 
 jQuery(document).ready(function($) {
-	  
+
+	  $('.rent_bxslider').bxSlider({
+	    mode: 'fade',
+	   //adaptiveHeight: true,
+	    //slideWidth: 1300
+	  });
+
 	  $('.bxslider').bxSlider({
 	    mode: 'fade',
 	    adaptiveHeight: true,
@@ -34,5 +40,10 @@ jQuery(document).ready(function($) {
 	  	  type:'image',
   		  gallery:{enabled:true},
 	  });
+
+	  // 
+	  $('div.LA_filters_checkbox.filters_image .slug-springs').parent().hide();
+	  $('div.LA_filters_checkbox.filters_image .slug-castles').parent().hide();
+	  $('div.LA_filters_checkbox.filters_image .slug-hiking').parent().hide();
 
 });

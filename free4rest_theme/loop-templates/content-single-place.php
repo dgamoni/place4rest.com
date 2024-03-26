@@ -77,12 +77,54 @@
 							}							
 						?>						
 					</div>
+					
+
+					<?php if( have_rows('free4rest_front_information') ): ?>
+
+						<div class="free4rest_front_information">
+
+							<?php while( have_rows('free4rest_front_information') ): the_row(); ?>
+
+								<?php 
+								$open = get_sub_field_object('free4rest_front_information_open');
+									if ( $open['value'] ) {
+										echo '<span class="info_elemet_wrap">';
+											echo '<span class="info_element info_element_label">'.$open['label'].' :</span>';
+											echo '<span class="info_element">'.$open['value'].'</span>';
+										echo '</span>';
+									} ?>
+
+								<?php 
+								$paids = get_sub_field_object('free4rest_front_information_paids');
+									if ( $paids['value'] ) {
+										echo '<span class="info_elemet_wrap">';
+											echo '<span class="info_element info_element_label">'.$paids['label'].' :</span>';
+											echo '<span class="info_element">'.$paids['value'].'</span>';
+										echo '</span>';
+									} ?>
+
+								<?php 
+								$serv = get_sub_field_object('free4rest_front_information_services');
+									if ( $serv['value'] ) {
+										echo '<span class="info_elemet_wrap">';
+											echo '<span class="info_element info_element_label">'.$serv['label'].' :</span>';
+											echo '<span class="info_element">'.$serv['value'].'</span>';
+										echo '</span>';
+									} ?>
+							<?php endwhile; ?>
+						
+						</div>
+
+					<?php endif; ?>
+
+
 					<div class="cat_services tags_list">
 						<?php
 							//$cat_services = get_terms( array('taxonomy' => 'cat_services', 'hide_empty' => false) ); 
 							$cat_services = get_the_terms( $post->ID, 'cat_services' );
 							foreach ($cat_services as $key => $cat_service) {
 								echo '<span class="tags_element '.$cat_service->slug.'" title="'.$cat_service->name.'"></span>';
+								//echo $cat_service->name.', ';
 							}
 						?>
 					</div>
@@ -92,6 +134,7 @@
 							$cat_activitys = get_the_terms( $post->ID, 'cat_activity' );
 							foreach ($cat_activitys as $key => $cat_activity) {
 								echo '<span class="tags_element '.$cat_activity->slug.'" title="'.$cat_activity->name.'"></span>';
+								//echo $cat_activity->name.', ';
 							}
 						?>
 					</div>					

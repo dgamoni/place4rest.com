@@ -26,3 +26,6 @@ foreach ($dirs as $dir) {
             include_once $dir . $other_init;
     }
 }
+
+//lib
+require_once CORE_PATH.'/lib/BFI_Thumb.php';
